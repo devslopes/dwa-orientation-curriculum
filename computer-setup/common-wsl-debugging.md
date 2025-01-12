@@ -8,7 +8,6 @@
 4. Restart your computer to complete the installation.
 5. Open Windows Terminal as an administrator.
 6. Run the command "wsl --set-version Ubuntu 2" and wait for the message "Conversion complete" or "This distribution is already the requested version".
-7. If you still receive the error "WSL2 is not supported with your current machine configuration," continue with WSL1 and go back to step 8 of the [Instructions to install Windows Subsystem for Linux](#instructions-to-install-windows-subsystem-for-linux).
 
 ---
 
