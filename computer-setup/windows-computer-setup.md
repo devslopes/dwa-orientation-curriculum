@@ -35,7 +35,6 @@ Here is a list of software you should have installed and configured before you b
     - [Instructions to install Node.js with NVM](#instructions-to-install-nodejs-with-nvm)
       - [Test your Node.js installation](#test-your-nodejs-installation)
   - [Test your NPM installation](#test-your-npm-installation)
-    - [WSL2 invalid machine configuration troubleshooting](#wsl2-invalid-machine-configuration-troubleshooting)
   - [GIT](#git)
     - [Instructions to configure GIT](#instructions-to-configure-git)
     - [Instructions to set the SSH key for GITHUB](#instructions-to-set-the-ssh-key-for-github)
@@ -50,7 +49,6 @@ Here is a list of software you should have installed and configured before you b
     - [Instructions for automatically formatting code when saving a file](#instructions-for-automatically-formatting-code-when-saving-a-file)
     - [Instructions to set the tab default size to 2 spaces (optional)](#instructions-to-set-the-tab-default-size-to-2-spaces-optional)
     - [Instructions to install the "Indent-rainbow" extension in VSCode (Optional)](#instructions-to-install-the-indent-rainbow-extension-in-vscode-optional)
-  - [How to reset the password for the UNIX user in WSL](#how-to-reset-the-password-for-the-unix-user-in-wsl)
 
 ## Google Chrome Browser
 
@@ -165,81 +163,78 @@ The Windows Subsystem for Linux (WSL) allows developers to run a GNU/Linux envir
 ### Instructions to install Windows Subsystem for Linux
 
 1. Download Ubuntu from the Microsoft Store
-2. When you go to open it you will likely encounter this error
+1. When you go to open it you will likely encounter this error
 
-```txt
-WslRegisterDistribution failed with error: 0x8007019e
-Error: 0x8007019e The Windows Subsystem for Linux has not been enabled.
-```
+  ```txt
+  WslRegisterDistribution failed with error: 0x8007019e
+  Error: 0x8007019e The Windows Subsystem for Linux has not been enabled.
+  ```
 
-3.Open Windows Terminal as an administrator (right-click on the app, select "Run as administrator").
+3. Open Windows Terminal as an administrator (right-click on the app, select "Run as administrator"). Run the following command:
 
-Run the following commands line by line. Please make sure to check each step along the way that no errors occurred. If you do get errors you can either try good ol' google or reaching out in #all-questions on discord.
+  ```powershell
+  # Line 1
+  wsl --install
+  ```
 
-```powershell
-# Line 1
-wsl --install
+**NOTE: The ```wsl --install``` command will start an ubuntu session - this is where you will set up your default unix user.**
 
-# Line 2
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+4. The unix user will be the name of the user that you will be using in development. It does not need to match your windows user name - but should be easy to remember and recognise as you.
 
+5. Setting the unix user password is critical as you will need it frequently in the future Ensure its easy for *you* to remember.
+    ***The password field will not show characters while typing as it is a blind-type field, please be careful while inputting your password***
 
-# Line 3
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+  **If for any reason you forgot the password of the UNIX user you created follow the [How to reset the password for the UNIX user in WSL](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/computer-setup/common-wsl-debugging.md#how-to-reset-the-password-for-the-unix-user-in-wsl)** instructions.
 
-# Line 4
-wsl --set-default-version 2
-```
+5. Open up another powershell instance as an admin and type in
+  
+  ```powershell
+  wsl --status
+  ```
 
-4.Restart your computer to finish the installation.
+  to check if you are on version 2, if not follow the [WSL2 invalid machine configuration troubleshooting](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/computer-setup/common-wsl-debugging.md#wsl2-invalid-machine-configuration-troubleshooting) steps before continuing to step 6
 
-5.Open up another powershell instance as an admin and type in `wsl --status` to check if you are on version 2, if not follow the [WSL2 invalid machine configuration troubleshooting](#wsl2-invalid-machine-configuration-troubleshooting) steps before continuing to step 6
+6. Restart your computer to finish the installation.
 
-6.Run the "Ubuntu" application to complete the installation and set up the UNIX user.
-
-7.Make sure to remember the password you set, as you will need it frequently in the future. If for any reason you forgot the password of the UNIX user you created follow the [How to reset the password for the UNIX user in WSL](#how-to-reset-the-password-for-the-unix-user-in-wsl) instructions.
-
-8.Right-click the top of your Ubuntu window and go to Properties. If you don't see `Properties` in the dropdown list, make sure to run the Ubuntu app as an administrator.
-
-a. Make sure to click the box that says `use Ctr + Shift + C/V as Copy/Paste`
-b. This will make it easier to copy stuff over to your ubuntu terminal both now and in the future
+7. Open the Ubuntu application (should have an orange circular icon) as an administrator. Right-click the top of your Ubuntu window and go to Properties.
+   1. Make sure to click the box that says `use Ctr + Shift + C/V as Copy/Paste`
+   1. This will make it easier to copy stuff over to your ubuntu terminal both now and in the future
 
 [Video tutorial for the installation process](https://www.loom.com/share/7dab16c5803f4af5abf6dc24efd51749?sid=a100f5ef-0acd-4044-b514-bfca17ae8c3d)
 
 ## Install some WSL Packages
 
-1.Run the command `sudo apt update` to fetch the available software updates from index.
+1. Run the following command to fetch the available software updates from index.
 
-2.Run the command `sudo apt upgrade` to upgrade all the installed packages to their lates versions.
-
-3.Install some useful packages using this command
-
-This will install some packages that you will need later on in this course.
-
-`sudo apt install zsh unzip git`
-
-4.Change default shell to zsh
-
-This will make your terminal look nicer, and give you some free cool shit when you are using github later on in this course.
-
-`chsh -s $(which zsh)`
-
-5.Restart Ubuntu
-
-6.Install Bun
-
-Bun is a Javascript Runtime that will be helpful for debugging once you start learning Javascript.
-
-Run the following in your terminal
-
-```zsh
-curl -fsSL https://bun.sh/install | bash
+```bash
+  sudo apt update
 ```
 
-7.Install Node
+2. Run the following command to upgrade all the installed packages to their latest versions.
 
-To install nvm please run the following command in your terminal
-`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh`
+```bash
+sudo apt upgrade
+```
+
+3. Install some useful packages using the next command. This will install some packages that you will need later on in this course.
+
+```bash
+sudo apt install zsh unzip git
+```
+
+1. Change default shell to zsh.This will make your terminal look nicer, and give you some extra useful information.
+
+```bash
+  chsh -s $(which zsh)
+```
+
+5. Restart Ubuntu by closing and re-opening the window
+
+6. Install Node to install nvm please run the following command in your terminal
+
+```bash
+ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+ ```
 
 ## Setup VSCode to Work With WSL
 
@@ -251,7 +246,11 @@ This is extremely important, and will let you use VSCode with your WSL for Linux
 
 That's it for this one 😃
 
-To test to see if it worked, go into your Ubuntu terminal and type in `which code`
+To test to see if it worked, go into your Ubuntu terminal and type in
+
+```bash
+which code
+```
 
 As long as it doesn't say `command not found "code"` or something like that, then you are good to go ✅
 
@@ -259,7 +258,7 @@ As long as it doesn't say `command not found "code"` or something like that, the
 
 Run this command to clone down the files for zgen
 
-```zsh
+```bash
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 ```
 
@@ -267,7 +266,7 @@ ZGen will make your terminal much nicer looking. Watch what happens after runnin
 
 To finish this installation, let's open our `zsh` configuration file by typing the following in Ubuntu
 
-```zsh
+```bash
 code ~/.zshrc
 ```
 
@@ -306,12 +305,16 @@ Node.js is an open-source, server-side JavaScript runtime environment that allow
 ### Instructions to install Node.js with NVM
 
 1. Launch the Ubuntu app.
-2. Run the command `nvm install v18.17.1` to install the latest long term support version of Node.js.
+2. Run the following command to install the latest long term support version of Node.js.
+  
+   ```bash
+   nvm install --lts
+   ```
 
 #### Test your Node.js installation
 
-1. Run the command `nvm list` to check the default version of Node.js is 18.17.1.
-2. Run the command `node -v` to check the current version of Node.js is 18.17.1.
+1. Run the command `nvm list` to check the default version of Node.js is v22.13.0
+2. Run the command `node -v` to check the current version of Node.js is v22.13.0
 
 [Back to TOP](#table-of-contents)
 
@@ -324,18 +327,6 @@ Node.js is an open-source, server-side JavaScript runtime environment that allow
 3. Run the command `npm -v` to check the installed version of Node Package Manager (NPM)
 
 [Back to TOP](#table-of-contents)
-
----
-
-### WSL2 invalid machine configuration troubleshooting
-
-1. If you encounter the error message "WSL2 is not supported with your current machine configuration," it may be necessary to configure your BIOS settings. Follow the instructions provided in this link to enable virtualization in your BIOS: [BIOS Configuration for WSL2](https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html).
-2. Open Windows Terminal as an administrator.
-3. Run the command "dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart".
-4. Restart your computer to complete the installation.
-5. Open Windows Terminal as an administrator.
-6. Run the command "wsl --set-version Ubuntu 2" and wait for the message "Conversion complete" or "This distribution is already the requested version".
-7. If you still receive the error "WSL2 is not supported with your current machine configuration," continue with WSL1 and go back to step 8 of the [Instructions to install Windows Subsystem for Linux](#instructions-to-install-windows-subsystem-for-linux).
 
 ---
 
@@ -458,20 +449,5 @@ Run the command `ssh -T git@github.com` to test your connection to GitHub. Wait 
 4. Click on the "Install" button to install the extension.
 
 [Video tutorial for the Recommended VS Code Setup & Installation process](https://www.loom.com/share/93a09531cff747bb8ce123a6aca84b24?sid=137ad148-ae53-422a-afad-789fa015ac3f)
-
-[Back to TOP](#table-of-contents)
-
----
-
-## How to reset the password for the UNIX user in WSL
-
-1. Open "Command Prompt" as an administrator.
-2. Run the command `wsl -u root` to run the distribution as a root user.
-3. Use the command `passwd userName`, replacing userName with the name of the user you created.
-4. You will be asked to set the password. Note that for security reasons, the system will not display your typing, so type carefully.
-5. Retype the same password when prompted and press 'enter'.
-6. If you see the message `passwd: password updated successfully`, the process is complete.
-7. Use the command `logout` to exit the root WSL session.
-8. Close the command prompt.
 
 [Back to TOP](#table-of-contents)
