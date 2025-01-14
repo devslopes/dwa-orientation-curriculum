@@ -164,30 +164,22 @@ The Windows Subsystem for Linux (WSL) allows developers to run a GNU/Linux envir
 
 ### Instructions to install Windows Subsystem for Linux
 
-1. Download Ubuntu from the Microsoft Store
-1. When you go to open it you will likely encounter this error
-
-  ```txt
-  WslRegisterDistribution failed with error: 0x8007019e
-  Error: 0x8007019e The Windows Subsystem for Linux has not been enabled.
-  ```
-
-3. Open Windows Terminal as an administrator (right-click on the app, select "Run as administrator"). Run the following command:
+1. Open Windows Terminal as an administrator (right-click on the app, select "Run as administrator"). Run the following command:
 
   ```powershell
-  wsl --install
+    wsl --install
   ```
 
-**NOTE: The ```wsl --install``` command will start an ubuntu session - this is where you will set up your default unix user.**
+**NOTE: The ```wsl --install``` command will start an Ubuntu session - this is where you will set up your default unix user.**
 
-4. The unix user will be the name of the user that you will be using in development. It does not need to match your windows user name - but should be easy to remember and recognise as you.
+2. The unix user will be the name of the user that you will be using in development. It does not need to match your windows user name - but should be easy to remember and recognise as you.
 
-5. Setting the unix user password is critical as you will need it frequently in the future Ensure its easy for *you* to remember.
+3. Setting the unix user password is critical as you will need it frequently in the future Ensure its easy for *you* to remember.
     ***The password field will not show characters while typing as it is a blind-type field, please be careful while inputting your password***
 
   **If for any reason you forgot the password of the UNIX user you created follow the [How to reset the password for the UNIX user in WSL](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/computer-setup/common-wsl-debugging.md#how-to-reset-the-password-for-the-unix-user-in-wsl)** instructions.
 
-1. Open up another terminal instance as an admin and type in
+4. Open up a windows terminal as an admin and type in
   
   ```powershell
   wsl --status
@@ -195,11 +187,12 @@ The Windows Subsystem for Linux (WSL) allows developers to run a GNU/Linux envir
 
   to check if you are on version 2, if not follow the [WSL2 invalid machine configuration troubleshooting](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/computer-setup/common-wsl-debugging.md#wsl2-invalid-machine-configuration-troubleshooting) steps before continuing to step 6
 
-6. Restart your computer to finish the installation.
+7. Restart your computer to finish the installation.
+   **From here on all commands should be run in the Ubuntu terminal**
 
-7. Open the Ubuntu application (should have an orange circular icon) as an administrator. Right-click the top of your Ubuntu window and go to Properties.
+8. Open the Ubuntu application (should have an orange circular icon) as an administrator. Right-click the top of your Ubuntu window and go to Properties.
    1. Make sure to click the box that says `use Ctr + Shift + C/V as Copy/Paste`
-   1. This will make it easier to copy stuff over to your ubuntu terminal both now and in the future
+   2. This will make it easier to copy stuff over to your ubuntu terminal both now and in the future
 
 [Video tutorial for the installation process](https://www.loom.com/share/7dab16c5803f4af5abf6dc24efd51749?sid=a100f5ef-0acd-4044-b514-bfca17ae8c3d)
 
