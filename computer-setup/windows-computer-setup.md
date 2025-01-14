@@ -6,7 +6,9 @@ Welcome to the first step in the Devslopes Web Academy, where you will set up yo
 
 These instructions have been tested on various types of machines, but there may be instances where things don't work exactly as expected. Make sure to carefully read the descriptive terminal messages and, if needed, repeat the previous step. If the issue persists, take a screenshot of the terminal or the software error message and provide it to Devslopes mentors for assistance.
 
-Note: Remember to press "enter" after copying and pasting the command into the terminal to run it.
+    Notes:  
+    - Remember to press "enter" after copying and pasting the command into the terminal to run it.
+    - All commands, unless otherwise stated, should be run in the Ubuntu terminal once installed 
 
 [Watch the overview video](https://www.loom.com/share/c4f94121e93342098d11e8db40d6a05c?sid=29f589e0-f046-4228-a9e1-d40c89c50ae7)
 
@@ -173,7 +175,6 @@ The Windows Subsystem for Linux (WSL) allows developers to run a GNU/Linux envir
 3. Open Windows Terminal as an administrator (right-click on the app, select "Run as administrator"). Run the following command:
 
   ```powershell
-  # Line 1
   wsl --install
   ```
 
@@ -186,7 +187,7 @@ The Windows Subsystem for Linux (WSL) allows developers to run a GNU/Linux envir
 
   **If for any reason you forgot the password of the UNIX user you created follow the [How to reset the password for the UNIX user in WSL](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/computer-setup/common-wsl-debugging.md#how-to-reset-the-password-for-the-unix-user-in-wsl)** instructions.
 
-5. Open up another powershell instance as an admin and type in
+1. Open up another terminal instance as an admin and type in
   
   ```powershell
   wsl --status
@@ -278,15 +279,8 @@ source "${HOME}/.zgen/zgen.zsh"
 zgen prezto
 prompt steeef
 
-# bun completions
-[ -s "/root/.bun/_bun" ] && source "/root/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 # This loads nvm bash_completion
 ```
@@ -365,7 +359,6 @@ As long as it doesn't say 'Command Not Found' we're good to go
 #### Test your SSH connection to Github
 
 Run the command `ssh -T git@github.com` to test your connection to GitHub. Wait for the message "Hi user.name! You've successfully authenticated, but GitHub does not provide shell access."
-
 
 [Video tutorial for the Git & GitHub installation process](https://www.loom.com/share/67e1a1e98fc447d9bc8f7b7888af5954?sid=24b08ef6-6996-406e-a5fa-ff118a536d80)
 
