@@ -36,7 +36,6 @@ Here is a list of software you should have installed and configured before you b
   - [NodeJS](#nodejs)
     - [Instructions to install Node.js with NVM](#instructions-to-install-nodejs-with-nvm)
       - [Test your Node.js installation](#test-your-nodejs-installation)
-  - [Test your NPM installation](#test-your-npm-installation)
   - [GIT](#git)
     - [Instructions to configure GIT](#instructions-to-configure-git)
     - [Instructions to set the SSH key for GITHUB](#instructions-to-set-the-ssh-key-for-github)
@@ -224,6 +223,8 @@ sudo apt install zsh unzip git
 
 5. Restart Ubuntu by closing and re-opening the window
 
+    - you should get a message telling you that "this is the Z Shell Configuration funtion ... " , we will set this up later so just press 0 
+
 6. Install Node to install nvm please run the following command in your terminal
 
 ```bash
@@ -273,14 +274,10 @@ zgen prezto
 prompt steeef
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 # This loads nvm bash_completion
 ```
-
-1. Launch VSCode and open the new VSCode terminal.
-2. Click the dropdown menu next to the "plus" icon and select "Select default Profile". 14. Choose "Ubuntu (WSL)" from the list.
-
 [Video tutorial for the WSL customization process](https://www.loom.com/share/b533a79f291842439d9f23b7c3805327?sid=cb4661c1-1d95-4a7d-b98a-1aa434034f84)
 
 ---
@@ -297,25 +294,19 @@ Node.js is an open-source, server-side JavaScript runtime environment that allow
    ```bash
    nvm install --lts
    ```
-
+3. Run the following command to set up the default node alias
+    ```bash
+    nvm alias default node
+    ```
+     
 #### Test your Node.js installation
 
 1. Run the command `nvm list` to check the default version of Node.js is v22.13.0
 2. Run the command `node -v` to check the current version of Node.js is v22.13.0
-
-[Back to TOP](#table-of-contents)
-
----
-
-## Test your NPM installation
-
-1. Make sure Node.js is installed ([Instructions to install Node.js with NVM](#instructions-to-install-nodejs-with-nvm)).
-2. Launch the Ubuntu app.
 3. Run the command `npm -v` to check the installed version of Node Package Manager (NPM)
 
 [Back to TOP](#table-of-contents)
 
----
 
 ## GIT
 
