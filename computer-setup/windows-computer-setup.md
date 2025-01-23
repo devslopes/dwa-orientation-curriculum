@@ -4,13 +4,13 @@ Hey Devslopes Student!
 
 Welcome to the first step in the Devslopes Web Academy, where you will set up your computer for this exciting learning journey 😃. Please ensure that you complete each installation in the specified order.
 
-These instructions have been tested on various types of machines, but there may be instances where things don't work exactly as expected. Make sure to carefully read the descriptive terminal messages and, if needed, repeat the previous step. If the issue persists, take a screenshot of the terminal or the software error message and provide it to Devslopes mentors for assistance.
+These instructions have been tested on various types of machines, but there may be instances where things don't work exactly as expected. Make sure to carefully read the descriptive terminal messages and, if needed, repeat the previous step. If the issue persists,there is a question asking template that we require you to use to get the best and most accurate answer from the mentors. This template can be added to the all-questions. It can be found [here](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/how-to-get-setup-help/Software-setup-all-questions-template.md)
 
     Notes:  
     - Remember to press "enter" after copying and pasting the command into the terminal to run it.
     - All commands, unless otherwise stated, should be run in the Ubuntu terminal once installed 
 
-[Watch the overview video](https://www.loom.com/share/c4f94121e93342098d11e8db40d6a05c?sid=29f589e0-f046-4228-a9e1-d40c89c50ae7)
+[Watch the overview video](https://www.loom.com/share/1ccf20e78ac046af95f804f33f894fb5?sid=26ceb85e-3701-4474-868e-7490dd171a66)
 
 ## Table of contents
 

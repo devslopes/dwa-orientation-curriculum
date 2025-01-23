@@ -12,10 +12,11 @@
 
 4. Restart your computer to complete the installation.
 5. Open Windows Terminal as an administrator.
+
 6. Run the command
 
 ```powershell
-wsl --set-version Ubuntu 2
+wsl --set-version  2
 ```
 
 and wait for the message "Conversion complete" or "This distribution is already the requested version".
@@ -56,3 +57,11 @@ This process removes the current WSL setup completely allowing a fresh start in 
 3. Restart installation process
 
 ---
+
+## Class Not Registered Error
+**Error code: Wsl/CallMsi/REGDB_E_CLASSNOTREG**
+
+1. Install wsl manually at this link : https://github.com/microsoft/WSL/releases/download/2.3.24/wsl.2.3.24.0.x64.msi
+2. Run powershell as administrator.
+3. Type this command to ensure using wsl2 : wsl --set-default-version 2
+4. run the command wsl --install 
