@@ -6,7 +6,9 @@ Welcome to the first step in the Devslopes Web Academy, where you will set up yo
 
 These instructions have been tested on various types of machines, but there may be instances where things don't work exactly as expected. Make sure to carefully read the descriptive terminal messages and, if needed, repeat the previous step. If the issue persists,there is a question asking template that we require you to use to get the best and most accurate answer from the mentors. This template can be added to the all-questions. It can be found [here](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/how-to-get-setup-help/Software-setup-all-questions-template.md)
 
-Note: Remember to press "enter" after copying and pasting the command into the terminal to run it.
+    Notes:  
+    - Remember to press "enter" after copying and pasting the command into the terminal to run it.
+    - All commands, unless otherwise stated, should be run in the Ubuntu terminal once installed 
 
 [Watch the overview video](https://www.loom.com/share/1ccf20e78ac046af95f804f33f894fb5?sid=26ceb85e-3701-4474-868e-7490dd171a66)
 
@@ -34,7 +36,6 @@ Here is a list of software you should have installed and configured before you b
   - [NodeJS](#nodejs)
     - [Instructions to install Node.js with NVM](#instructions-to-install-nodejs-with-nvm)
       - [Test your Node.js installation](#test-your-nodejs-installation)
-  - [Test your NPM installation](#test-your-npm-installation)
   - [GIT](#git)
     - [Instructions to configure GIT](#instructions-to-configure-git)
     - [Instructions to set the SSH key for GITHUB](#instructions-to-set-the-ssh-key-for-github)
@@ -162,31 +163,22 @@ The Windows Subsystem for Linux (WSL) allows developers to run a GNU/Linux envir
 
 ### Instructions to install Windows Subsystem for Linux
 
-1. Download Ubuntu from the Microsoft Store
-1. When you go to open it you will likely encounter this error
-
-  ```txt
-  WslRegisterDistribution failed with error: 0x8007019e
-  Error: 0x8007019e The Windows Subsystem for Linux has not been enabled.
-  ```
-
-3. Open Windows Terminal as an administrator (right-click on the app, select "Run as administrator"). Run the following command:
+1. Open Windows Terminal as an administrator (right-click on the app, select "Run as administrator"). Run the following command:
 
   ```powershell
-  # Line 1
-  wsl --install
+    wsl --install
   ```
 
-**NOTE: The ```wsl --install``` command will start an ubuntu session - this is where you will set up your default unix user.**
+**NOTE: The ```wsl --install``` command will start an Ubuntu session - this is where you will set up your default unix user.**
 
-4. The unix user will be the name of the user that you will be using in development. It does not need to match your windows user name - but should be easy to remember and recognise as you.
+2. The unix user will be the name of the user that you will be using in development. It does not need to match your windows user name - but should be easy to remember and recognise as you.
 
-5. Setting the unix user password is critical as you will need it frequently in the future Ensure its easy for *you* to remember.
+3. Setting the unix user password is critical as you will need it frequently in the future Ensure its easy for *you* to remember.
     ***The password field will not show characters while typing as it is a blind-type field, please be careful while inputting your password***
 
   **If for any reason you forgot the password of the UNIX user you created follow the [How to reset the password for the UNIX user in WSL](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/computer-setup/common-wsl-debugging.md#how-to-reset-the-password-for-the-unix-user-in-wsl)** instructions.
 
-5. Open up another powershell instance as an admin and type in
+4. Open up a windows terminal as an admin and type in
   
   ```powershell
   wsl --status
@@ -194,11 +186,12 @@ The Windows Subsystem for Linux (WSL) allows developers to run a GNU/Linux envir
 
   to check if you are on version 2, if not follow the [WSL2 invalid machine configuration troubleshooting](https://github.com/devslopes/dwa-orientation-curriculum/blob/master/computer-setup/common-wsl-debugging.md#wsl2-invalid-machine-configuration-troubleshooting) steps before continuing to step 6
 
-6. Restart your computer to finish the installation.
+7. Restart your computer to finish the installation.
+   **From here on all commands should be run in the Ubuntu terminal**
 
-7. Open the Ubuntu application (should have an orange circular icon) as an administrator. Right-click the top of your Ubuntu window and go to Properties.
+8. Open the Ubuntu application (should have an orange circular icon) as an administrator. Right-click the top of your Ubuntu window and go to Properties.
    1. Make sure to click the box that says `use Ctr + Shift + C/V as Copy/Paste`
-   1. This will make it easier to copy stuff over to your ubuntu terminal both now and in the future
+   2. This will make it easier to copy stuff over to your ubuntu terminal both now and in the future
 
 [Video tutorial for the installation process](https://www.loom.com/share/7dab16c5803f4af5abf6dc24efd51749?sid=a100f5ef-0acd-4044-b514-bfca17ae8c3d)
 
@@ -229,6 +222,8 @@ sudo apt install zsh unzip git
 ```
 
 5. Restart Ubuntu by closing and re-opening the window
+
+    - you should get a message telling you that "this is the Z Shell Configuration funtion ... " , we will set this up later so just press 0 
 
 6. Install Node to install nvm please run the following command in your terminal
 
@@ -278,22 +273,11 @@ source "${HOME}/.zgen/zgen.zsh"
 zgen prezto
 prompt steeef
 
-# bun completions
-[ -s "/root/.bun/_bun" ] && source "/root/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 # This loads nvm bash_completion
 ```
-
-1. Launch VSCode and open the new VSCode terminal.
-2. Click the dropdown menu next to the "plus" icon and select "Select default Profile". 14. Choose "Ubuntu (WSL)" from the list.
-
 [Video tutorial for the WSL customization process](https://www.loom.com/share/b533a79f291842439d9f23b7c3805327?sid=cb4661c1-1d95-4a7d-b98a-1aa434034f84)
 
 ---
@@ -310,25 +294,19 @@ Node.js is an open-source, server-side JavaScript runtime environment that allow
    ```bash
    nvm install --lts
    ```
-
+3. Run the following command to set up the default node alias
+    ```bash
+    nvm alias default node
+    ```
+     
 #### Test your Node.js installation
 
 1. Run the command `nvm list` to check the default version of Node.js is v22.13.0
 2. Run the command `node -v` to check the current version of Node.js is v22.13.0
-
-[Back to TOP](#table-of-contents)
-
----
-
-## Test your NPM installation
-
-1. Make sure Node.js is installed ([Instructions to install Node.js with NVM](#instructions-to-install-nodejs-with-nvm)).
-2. Launch the Ubuntu app.
 3. Run the command `npm -v` to check the installed version of Node Package Manager (NPM)
 
 [Back to TOP](#table-of-contents)
 
----
 
 ## GIT
 
@@ -365,7 +343,6 @@ As long as it doesn't say 'Command Not Found' we're good to go
 #### Test your SSH connection to Github
 
 Run the command `ssh -T git@github.com` to test your connection to GitHub. Wait for the message "Hi user.name! You've successfully authenticated, but GitHub does not provide shell access."
-
 
 [Video tutorial for the Git & GitHub installation process](https://www.loom.com/share/67e1a1e98fc447d9bc8f7b7888af5954?sid=24b08ef6-6996-406e-a5fa-ff118a536d80)
 
