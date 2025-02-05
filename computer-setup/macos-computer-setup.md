@@ -227,7 +227,7 @@ We will frequently use two commands in these instructions:
 
 - If the command `which zsh` didn't return any output or displayed "zsh not found," proceed to the [Instructions for installing Z Shell (ZSH)](#instructions-to-install-z-shell-zsh).
 - If the command `echo $SHELL` returned a path that doesn't end with "/zsh," proceed to the [Instructions to switch the default shell to ZSH if the default shell is BASH](#instructions-to-switch-the-default-shell-to-zsh-if-the-default-shell-is-bash).
-- If both commands returned paths that end with "/zsh," ZSH is properly set up. Please, SKIP the remaining ZSH instructions.
+- If both commands returned paths that end with "/zsh," ZSH is properly set up. Please, SKIP the remaining ZSH instructions and switch to the next section [Oh My Zsh (OMZ)](#oh-my-zsh-omz).
 
 ### Instructions to switch the default shell to ZSH if the default shell is BASH
 
