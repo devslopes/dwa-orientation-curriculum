@@ -74,6 +74,8 @@ Homebrew is a package manager for macOS that allows users to easily install, upd
 
 ### Instructions to install Homebrew
 
+[Video guide on how to install Homebrew](https://www.loom.com/share/903850d90b4a4fd7bc6ba06ed61be65b?sid=a27d4f25-b3be-4f67-be7a-78c94d5d2dff)
+
 [Install Command Source](https://brew.sh/)
 
 1. Launch the MacOS Terminal application.
@@ -85,7 +87,6 @@ Homebrew is a package manager for macOS that allows users to easily install, upd
 
 3. Follow the terminal instruction to complete the installation.
 
-[Video guide on how to install Homebrew](https://www.loom.com/share/903850d90b4a4fd7bc6ba06ed61be65b?sid=a27d4f25-b3be-4f67-be7a-78c94d5d2dff)
 
 ### Test your Homebrew installation
 
@@ -101,6 +102,8 @@ For beginners, the Google Chrome Browser is the optimal option as it offers the 
 
 ### Instructions to install Google Chrome Browser with Homebrew
 
+[Video guide on how to install Google Chrome Browser](https://www.loom.com/share/8635c1c4404143ada10a4d47daa6cdf0?sid=474b8e43-1ba7-4133-8ee3-c878df09ea04)
+
 [Cask Install Command Source](https://formulae.brew.sh/cask/google-chrome#default)
 
 1. Launch the MacOS Terminal application.
@@ -112,7 +115,6 @@ For beginners, the Google Chrome Browser is the optimal option as it offers the 
 7. Congratulations! You have successfully installed Google Chrome. Enjoy browsing the web with one of the most popular and feature-rich browsers available.
 8. (Optional) Pin the app to the doc for quick access.
 
-[Video guide on how to install Google Chrome Browser](https://www.loom.com/share/8635c1c4404143ada10a4d47daa6cdf0?sid=474b8e43-1ba7-4133-8ee3-c878df09ea04)
 
 [Back to TOP](#table-of-contents)
 
@@ -124,6 +126,8 @@ Discord is a popular communication platform designed for creating communities an
 
 ### Instructions to install Discord with Homebrew
 
+[Video guide on how to install Discord](https://www.loom.com/share/8aecd89ee3934fcf877b2d5b93c34642?sid=3d5a8aa4-6904-41df-80e7-fa356996cb78)
+
 [Cask Install Command Source](https://formulae.brew.sh/cask/discord#default)
 
 1. Launch the MacOS Terminal application.
@@ -133,7 +137,6 @@ Discord is a popular communication platform designed for creating communities an
 5. Once the installation is complete launch Discord by searching for it in the Launchpad.
 6. Sign in with your login and password or click on the "Register" link to sign up.
 
-[Video guide on how to install Discord](https://www.loom.com/share/8aecd89ee3934fcf877b2d5b93c34642?sid=3d5a8aa4-6904-41df-80e7-fa356996cb78)
 
 [Back to TOP](#table-of-contents)
 
@@ -144,6 +147,8 @@ Discord is a popular communication platform designed for creating communities an
 Zoom is a widely-used video conferencing platform that enables users to remotely connect and collaborate. With its user-friendly interface and comprehensive set of features, Zoom has become a preferred solution for businesses, schools, and individuals globally. Students are able to attend daily meetings, engage in webinars, and facilitate virtual events using functionalities such as screen sharing, text-based chat, and voice calls with Devslopes Web Academy mentors.
 
 ### Instructions to install Zoom with Homebrew
+
+[Video guide on how to install Zoom](https://www.loom.com/share/bacccde45d6940cda5756164e586938d?sid=90fafa34-6c9e-4008-b876-c96954ae39ff)
 
 [Cask Install Command Source](https://formulae.brew.sh/cask/zoom#default)
 
@@ -156,7 +161,6 @@ Zoom is a widely-used video conferencing platform that enables users to remotely
 7. Click on the "Sign Up" or "Sign In" button in the popup window that appears after the installation process.
 8. Follow the prompts to complete the sign-up process.
 
-[Video guide on how to install Zoom](https://www.loom.com/share/bacccde45d6940cda5756164e586938d?sid=90fafa34-6c9e-4008-b876-c96954ae39ff)
 
 [Back to TOP](#table-of-contents)
 
@@ -167,6 +171,8 @@ Zoom is a widely-used video conferencing platform that enables users to remotely
 Loom is a video messaging and screen recording platform that allows users to easily create and share videos. With Loom, students can quickly capture their screen, record their webcam, or create a combination of both to effectively communicate ideas, share tutorials, provide feedback or demonstrate the issue they struggle on for the Discord all-question posts.
 
 ### Instructions to install Loom with Homebrew
+
+[Video guide on how to install Loom](https://www.loom.com/share/40581cede0364a89bb63fa654c4f2f44?sid=29700266-63db-454b-8d2a-cdbdeee97d15)
 
 [Cask Install Command Source](https://formulae.brew.sh/cask/loom#default)
 
@@ -179,7 +185,6 @@ Loom is a video messaging and screen recording platform that allows users to eas
 7. The Loom icon will appear on the right side of the top panel in MacOS. Click on the icon and sign in or create an account to start using Loom.
 8. Follow the prompts to complete the sign-in or sign-up process.
 
-[Video guide on how to install Loom](https://www.loom.com/share/40581cede0364a89bb63fa654c4f2f44?sid=29700266-63db-454b-8d2a-cdbdeee97d15)
 
 [Back to TOP](#table-of-contents)
 
@@ -191,6 +196,8 @@ VSCode, short for Visual Studio Code, is a popular Integrated Development Enviro
 
 ### Instructions to install VSCode IDE with Homebrew
 
+[Video guide on how to install Visual Studio Code (VSCode)](https://www.loom.com/share/77de0a1ccaec40e8952faf8fc5e529a2?sid=58841e1e-9a8d-499b-8525-ecd7e4bdbfb5)
+
 [Cask Install Command Source](https://formulae.brew.sh/cask/visual-studio-code#default)
 
 1. Launch the MacOS Terminal application.
@@ -200,7 +207,6 @@ VSCode, short for Visual Studio Code, is a popular Integrated Development Enviro
 5. Upon launching VSCode, you will be prompted to open the app. Click "Open".
 6. (Optional) Pin the app to the doc for quick access.
 
-[Video guide on how to install Visual Studio Code (VSCode)](https://www.loom.com/share/77de0a1ccaec40e8952faf8fc5e529a2?sid=58841e1e-9a8d-499b-8525-ecd7e4bdbfb5)
 
 [Back to TOP](#table-of-contents)
 
@@ -209,6 +215,8 @@ VSCode, short for Visual Studio Code, is a popular Integrated Development Enviro
 ## Z Shell (ZSH)
 
 ZSH, short for Z Shell, is an alternative shell to the widely used Bash shell in Unix-based operating systems. It offers a more powerful and customizable command-line experience with additional features such as advanced tab completion, spelling correction, plugin support, and extensive prompt customization options. ZSH also provides improved performance with optimizations and enhancements over the traditional Bash shell. With its user-friendly interface and extensive configurability, ZSH has become a popular choice among developers and power users for enhancing productivity and efficiency in the command-line environment.
+
+[Video guide on how to default your shell to ZSH and to install ZSH with Homebrew](https://www.loom.com/share/57e620e5bd7544b88c148a81a1700b95?sid=05c9fa64-ad04-424c-8fba-c1fc4cadd940)
 
 ### Get Started with ZSH
 
@@ -257,13 +265,15 @@ We will frequently use two commands in these instructions:
 9. Provide the terminal with the user password.
 10. Repeat the [Instructions to check if ZSH is installed and set as the default shell](#instructions-to-check-if-zsh-is-installed-and-set-as-the-default-shell)
 
-[Video guide on how to default your shell to ZSH and to install ZSH with Homebrew](https://www.loom.com/share/57e620e5bd7544b88c148a81a1700b95?sid=05c9fa64-ad04-424c-8fba-c1fc4cadd940)
+
 
 [Back to TOP](#table-of-contents)
 
 ---
 
 ## Oh My Zsh (OMZ)
+
+[Video guide on how to install Oh My Zsh (OMZ)](https://www.loom.com/share/f5ec09e0e03a4447989b3ed2c2fcb0fb?sid=ddc13ea0-5a4f-45a0-8000-4218acb6cdb6)
 
 ### Instructions to install Oh My Zsh (OMZ)
 
@@ -276,7 +286,6 @@ We will frequently use two commands in these instructions:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-[Video guide on how to install Oh My Zsh (OMZ)](https://www.loom.com/share/f5ec09e0e03a4447989b3ed2c2fcb0fb?sid=ddc13ea0-5a4f-45a0-8000-4218acb6cdb6)
 
 [Back to TOP](#table-of-contents)
 
@@ -285,6 +294,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ## Node Version Manager (NVM)
 
 Node Version Manager (NVM) is a tool that allows developers to easily install, manage, and switch between multiple versions of Node.js on a single machine. It provides a command-line interface to install Node.js versions from the official Node.js distribution, as well as other sources, and enables developers to quickly switch between different versions to ensure compatibility with their projects or to test their code against different Node.js versions. NVM simplifies the process of managing Node.js versions, making it easier for developers to work with different versions of Node.js and ensuring their projects are running on the appropriate runtime environment.
+
+
+[Video guide on how to install Node Version Manager (NVM)](https://www.loom.com/share/5fcb934cc3d941ccbe64c41da5eb5ade?sid=cb6fe6c7-6941-448b-8346-5406c8e3aa60)
 
 ### Instructions to install Node Version Manager (NVM)
 
@@ -317,8 +329,6 @@ ls -a
 8. Save the file and close the default text editor.
 9. Restart the MacOS Terminal application.
 
-[Video guide on how to install Node Version Manager (NVM)](https://www.loom.com/share/5fcb934cc3d941ccbe64c41da5eb5ade?sid=cb6fe6c7-6941-448b-8346-5406c8e3aa60)
-
 ### Test your Node Version Manager Installation
 
 1. Run the command `nvm --version` to check the installed version of NVM.
@@ -332,17 +342,19 @@ ls -a
 
 Node.js is an open-source, server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, making it particularly well-suited for applications that require real-time communication and data-intensive tasks. Node.js enables developers to write server-side code using JavaScript, which reduces the complexity of having separate client-side and server-side languages. It has a vibrant ecosystem with a wide range of libraries and frameworks, which makes it a popular choice for web and network application development.
 
+[Video guide on how to install Node.js with nvm](https://www.loom.com/share/2a692a493a2e4360a591628d4d7ff687?sid=ab393b94-7320-4687-aa33-a3afd559e9ba)
+
 ### Instructions to install Node.js with NVM
 
 1. Launch the MacOS Terminal application.
-2. Run the command `nvm install v18.17.1` to install the latest long term support version of Node.js.
+2. Run the command `nvm install node --lts` to install the latest long term support version of Node.js.
 
-[Video guide on how to install Node.js with](https://www.loom.com/share/2a692a493a2e4360a591628d4d7ff687?sid=ab393b94-7320-4687-aa33-a3afd559e9ba)
+
 
 #### Test your Node.js installation
 
-1. Run the command `nvm list` to check the default version of Node.js is 18.17.1.
-2. Run the command `node -v` to check the current version of Node.js is 18.17.1.
+1. Run the command `nvm list` to check the default version of Node.js.
+2. Run the command `node -v` to check the current version of Node.js.
 
 [Back to TOP](#table-of-contents)
 
@@ -353,12 +365,11 @@ Node.js is an open-source, server-side JavaScript runtime environment that allow
 Node Package Manager (NPM) is a package manager for the JavaScript programming language. It is bundled with the Node.js runtime and allows developers to easily install, manage, and share reusable JavaScript code packages. NPM provides a vast repository of over a million packages that developers can leverage in their projects, ranging from small utility libraries to full-fledged frameworks and tools. With NPM, developers can easily add new functionality to their applications, handle dependencies, and manage project dependencies efficiently. NPM has become an essential tool in the JavaScript ecosystem, enabling developers to streamline their workflows and build robust and scalable applications.
 
 ### Test your NPM installation
+[Video guide on how to test the installation of Node Package Manager (NPM)](https://www.loom.com/share/b4b099ac94324f0eb8eaecbbc8d46fd8?sid=4da2e56d-8658-4c39-a2c4-1ab36b11eca5)
 
 1. Make sure Node.js is installed ([Instructions to install Node.js with NVM](#instructions-to-install-nodejs-with-nvm)).
 2. Launch the MacOS Terminal application.
 3. Run the command `npm -v` to check the installed version of Node Package Manager (NPM)
-
-[Video guide on how to test the installation of Node Package Manager (NPM)](https://www.loom.com/share/b4b099ac94324f0eb8eaecbbc8d46fd8?sid=4da2e56d-8658-4c39-a2c4-1ab36b11eca5)
 
 [Back to TOP](#table-of-contents)
 
@@ -369,6 +380,8 @@ Node Package Manager (NPM) is a package manager for the JavaScript programming l
 GIT is a distributed version control system that allows developers to track changes, collaborate on projects, and manage source code effectively. It provides a way to keep a history of changes made to files, allowing developers to revert to previous versions if needed. GIT's decentralized architecture allows multiple developers to work on the same project simultaneously, independently making changes and merging them seamlessly. It also supports branching, which enables developers to work on separate features or experiments without affecting the main project, and later merge those branches back together. GIT has become an essential tool for software development, enabling teams to work collaboratively, track changes, and ensure code integrity.
 
 GIT is already included in the Windows Subsystem for Linux (WSL), so there is no need for a separate installation. However, you may still need to configure GIT to work properly within the WSL environment and Github remote repos.
+
+[Video guide on how to install GIT with Homebrew](https://www.loom.com/share/8c24b0f2369a477d98a680a123ebcbec?sid=cdf45803-597b-46b1-b7e8-2499520c27dc)
 
 ### Instructions to configure GIT
 
@@ -392,12 +405,12 @@ brew install git
 export PATH=/usr/local/bin:$PATH
 ```
 
-[Video guide on how to install GIT with Homebrew](https://www.loom.com/share/8c24b0f2369a477d98a680a123ebcbec?sid=cdf45803-597b-46b1-b7e8-2499520c27dc)
-
 #### Test your GIT installation
 
 1. Run the command `git --version` to check the installed version of Git.
 2. Visit [https://git-scm.com](https://git-scm.com) to confirm that your Git version matches the latest available version.
+
+[Video guide on how to generate the SSH Key and add it to your GitHub profile](https://www.loom.com/share/f9e5ef63f77441c989d1b32eb5046417?sid=ba3e277d-ce51-49bf-bf31-009d11da7fac)
 
 ### Instructions to set the SSH key for GITHUB
 
@@ -409,7 +422,6 @@ export PATH=/usr/local/bin:$PATH
 
 Run the command `ssh -T git@github.com` to test your connection to GitHub. Wait wor the message "Hi user.name! You've successfully authenticated, but GitHub does not provide shell access."
 
-[Video guide on how to generate the SSH Key and add it to your GitHub profile](https://www.loom.com/share/f9e5ef63f77441c989d1b32eb5046417?sid=ba3e277d-ce51-49bf-bf31-009d11da7fac)
 
 [Back to TOP](#table-of-contents)
 
